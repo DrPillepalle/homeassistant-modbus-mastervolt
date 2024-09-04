@@ -1,0 +1,9 @@
+{
+    "domain": "modbus_mastervolt",
+    "name": "Custom Modbus MasterVolt Integration",
+    "version": "1.0",
+    "documentation": "https://github.com/temuccio/homeassistant-modbus-mastervolt",
+    "dependencies": ["modbus"],
+    "requirements": [],
+    "codeowners": ["@temuccio"]
+  }
