@@ -1,6 +1,6 @@
 # Mastervolt Modbus Integration Module
 
-This module integrates Mastervolt devices via Modbus. It has been tested with the Mastervolt BAT, MCU, SCM and MAC.
+This module integrates Mastervolt devices via Modbus. It has been tested with the Mastervolt MLI Ultra 12/5500, Mass Combi Pro 12/3000-150 230V, SCM60 MPPT-MB, MasterBus Modbus Interface, Mastervolt USB Interface. 
 
 ## How to Retrieve Necessary Parameters
 
