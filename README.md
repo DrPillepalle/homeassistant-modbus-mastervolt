@@ -1,10 +1,10 @@
 # Mastervolt Modbus Integration Module
 
-This module integrates Mastervolt devices via Modbus. It has been tested with the Mastervolt Combi Master and Mastershunt.
+This module integrates Mastervolt devices via Modbus. It has been tested with the Mastervolt BAT, MCU, SCM and MAC.
 
 ## How to Retrieve Necessary Parameters
 
-For each value you need to read or write, you must obtain the `IDAL`, `IDB`, `TAB`, and `VAR` parameters from MasterAdjust.
+For each value you need to read or write, you must obtain the `IDAL`, `IDB`, `TAB`, and `VAR` parameters from MasterAdjust (Windows App, free DownloadFrr Download from Mastervolt; https://www.mastervolt.de/downloads/so/)
 
 ### Steps to Retrieve Parameters:
 
