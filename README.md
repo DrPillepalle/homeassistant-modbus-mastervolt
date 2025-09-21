@@ -206,7 +206,7 @@ modbus:
         scan_interval: 10000
         data_type: int16
         precision: 2
-        slave: 1
+        device_address: 1
 ```
 ###Step 2: Add Sensor for Reading
 
