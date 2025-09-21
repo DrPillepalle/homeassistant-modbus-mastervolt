@@ -83,7 +83,7 @@ class ModbusReadWriteSensor(SensorEntity):
 
     def perform_modbus_read(self):
         hub_name = "modbus_hub1"
-        slave = 1
+        device_id = 1
         read_address = 0x0000
         read_count = 6
         write_address = 0x0000
@@ -104,7 +104,7 @@ class ModbusReadWriteSensor(SensorEntity):
                     read_count=read_count,
                     write_address=write_address,
                     values=values,
-                    slave=slave
+                    device_id=device_id
                 ),
                 self._hass.loop
             ).result()
@@ -172,7 +172,7 @@ class ModbusReadWriteSensor(SensorEntity):
         self._var = var
         
         hub_name = "modbus_hub1"
-        slave = 1
+        device_id = 1
         read_address = 0x0000
         read_count = 6
         write_address = 0x0001
@@ -207,7 +207,7 @@ class ModbusReadWriteSensor(SensorEntity):
                     read_count=read_count,
                     write_address=write_address,
                     values=values,
-                    slave=slave
+                    device_id=device_id
                 ),
                 self._hass.loop
             ).result()
