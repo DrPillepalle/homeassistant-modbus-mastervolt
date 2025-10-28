@@ -33,45 +33,6 @@ This module requires a Modbus connection. Ensure that it is enabled and that you
 ## Modbus Message Structure
 
 The module generates a Modbus message in the following format:
-Certainly! Here's the content formatted as a .md file:
-
-md
-
-# Mastervolt Modbus Integration Module
-
-This module integrates Mastervolt devices via Modbus. It has been tested with the Mastervolt Combi Master and Mastershunt.
-
-## How to Retrieve Necessary Parameters
-
-For each value you need to read or write, you must obtain the `IDAL`, `IDB`, `TAB`, and `VAR` parameters from MasterAdjust.
-
-### Steps to Retrieve Parameters:
-
-1. **IDAL and IDB:**
-   - Right-click on the device in MasterAdjust.
-   - Select "Properties."
-   - Note down the `IDAL` and `IDB` values.
-   
-2. **TAB:**
-   - Use the following conventions:
-     - `0` for Monitoring
-     - `1` for Alarm
-     - `2` for History
-     - `3` for Configuration
-   
-3. **VAR:**
-   - Hover the mouse over the desired value to obtain its Index.
-   - This Index is in decimal format; convert it to hexadecimal before using it in the `configuration.yaml`.
-
-## Modbus Connection Requirements
-
-This module requires a Modbus connection. Ensure that it is enabled and that you set the correct values for `port`, `baudrate`, `stopbits`, `bytesize`, `parity`, and `timeout`.
-
-**Note:** The Modbus module requires at least one sensor to function. A dummy sensor can be used if needed.
-
-## Modbus Message Structure
-
-The module generates a Modbus message in the following format:
 
 0x01 0x17 0x00 0x00 0x00 0x06 0x00 0x00 0x00 0x06 0x0c 0x1b 0x02 0xc4 0xd9 0x00 0x00 0x00 0x08 0x00 0x00 0x80 0x3f 0xea 0xff
 
